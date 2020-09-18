@@ -6,10 +6,10 @@ import csv
 from fuzzywuzzy import fuzz
 from functools import lru_cache
 
-RATIO = 79
-PARTIAL_RATIO = 99
-TOKEN_SORT_RATIO = 81
-TOKEN_SET_RATIO = 99
+RATIO = 75
+PARTIAL_RATIO = 85
+TOKEN_SORT_RATIO = 75
+TOKEN_SET_RATIO = 85
 CACHE_REFRESH_PERIOD_UNIX = 4.32e+7
 APPLIST_SHELVE_NAME = 'applist'
 APPDETAILS_SHELVE_NAME = 'appdetails'
