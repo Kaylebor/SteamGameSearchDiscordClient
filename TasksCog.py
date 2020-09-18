@@ -13,6 +13,6 @@ class TasksCog(commands.Cog):
     async def refreshapplist(self):
         print('Periodic cache refresh...')
         global applist
-        self.client.setAppList.cache_clear()
+        self.client.getAppList.cache_clear()
         self.client.getAppDetail.cache_clear()
         self.client.fuzzyGetAppDetail.cache_clear()
