@@ -1,0 +1,7 @@
+__pycache__
+env
+.vscode
+app*.bak
+app*.dat
+app*.dir
+details_test.json
