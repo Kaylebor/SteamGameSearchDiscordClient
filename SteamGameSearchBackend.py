@@ -62,7 +62,7 @@ class SteamGameSearchBackend():
             fuzz.token_set_ratio(appname, namesearch) > TOKEN_SET_RATIO}
         return {appid: details for (appid, details) in game_details.items() if len(details) > 0}
     
-    def writeWeight(appdetails, appid, namesearch):
+    def writeWeight(self, appdetails, appid, namesearch):
         if appid in appdetails and 'name' in appdetails[appid]:
             appname = appdetails[appid]['name']
             weights = {
