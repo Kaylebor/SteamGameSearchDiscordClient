@@ -1,8 +1,8 @@
 from discord.ext import tasks, commands
 
 class TasksCog(commands.Cog):
-    def __init__(self, client):
-        self.client = client
+    def __init__(self, backend):
+        self.backend = backend
         self.index = 0
         self.refreshapplist.start()
 
@@ -13,6 +13,6 @@ class TasksCog(commands.Cog):
     async def refreshapplist(self):
         print('Periodic cache refresh...')
         global applist
-        self.client.getAppList.cache_clear()
-        self.client.getAppDetail.cache_clear()
-        self.client.fuzzyGetAppDetail.cache_clear()
+        self.backend.getAppList.cache_clear()
+        self.backend.getAppDetail.cache_clear()
+        self.backend.fuzzyGetAppDetail.cache_clear()

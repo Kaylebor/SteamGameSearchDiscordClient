@@ -1,7 +1,5 @@
 __pycache__
 env
 .vscode
-app*.bak
-app*.dat
-app*.dir
+app*
 details_test.json
